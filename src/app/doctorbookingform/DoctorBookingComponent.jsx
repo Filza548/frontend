@@ -44,8 +44,8 @@ export default function DoctorBookingComponent() {
     
     try {
       // ✅ URL check karo - yeh sahi hai?
-            console.log('Fetching Doctor-Consultation data from API...',process.env.BACKEND_URL);
-      const response = await axios.post(`${process.env.BACKEND_URL}/doctor-consultation`, formData, {
+            console.log('Fetching data from API...',process.env.NEXT_PUBLIC_BACKEND_URL);
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/doctor-consultation`, formData, {
         headers: { 'Content-Type': 'application/json' }
       });
       
