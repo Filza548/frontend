@@ -15,7 +15,7 @@ export default function DoctorCosultationComponent() {
 
   const fetchAppointments = async () => {
     try {
-      console.log('Fetching Doctor-Consultation data from API...',process.env.BACKEND_URL);
+       console.log('Fetching Doctor-Consultation data from API...',process.env.BACKEND_URL);
       const response = await axios.get(`${process.env.BACKEND_URL}/doctor-consultation`);
       console.log('Full API Response:', response);
       console.log('Response Data:', response.data);
