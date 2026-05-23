@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold g mb-6 animate-fade-in">
               Book Your Appointment <br />
               <span className="text-yellow-300">In Seconds</span>
             </h1>
