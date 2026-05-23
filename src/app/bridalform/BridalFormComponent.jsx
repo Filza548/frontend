@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/makeup-bridal';
+const API_URL = `${process.env.NEXT_PUBLIC_BACKEND_URL}/makeup-bridal`;
 
 const inputClass = 'w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition';
 const labelClass = 'block text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1.5';
