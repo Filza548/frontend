@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 
-const API_URL = `${process.env.NEXT_PUBLIC_BACKEND_URL}/makeup-bridal`;
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/makeup-bridal`);
 
 const statusConfig = {
   pending:   { pill: 'bg-amber-50 text-amber-600 border border-amber-200', dot: 'bg-amber-400' },
