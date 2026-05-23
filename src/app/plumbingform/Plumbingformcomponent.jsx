@@ -73,7 +73,7 @@ export default function PlumbingFormComponent() {
 
     try {
       const response = await axios.post(
-        'http://localhost:3001/plumbing-services',
+        (`${process.env.NEXT_PUBLIC_BACKEND_URL}/plumbing-services`),
         submitData,
         { headers: { 'Content-Type': 'application/json' } }
       );

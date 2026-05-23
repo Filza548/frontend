@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/salon-spa-consultations';
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/salon-spa-consultations`);
 
 const statusConfig = {
   Scheduled:  { bg: 'bg-amber-50 text-amber-700 border-amber-200', dot: 'bg-amber-500' },

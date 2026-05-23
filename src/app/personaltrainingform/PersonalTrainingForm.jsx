@@ -57,7 +57,7 @@ export default function PersonalTrainingForm() {
     }
 
     try {
-      await axios.post('http://localhost:3001/personal-training', {
+      await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/personal-training`, {
         ...formData,
         age: parseInt(formData.age),
         durationMinutes: parseInt(formData.durationMinutes),

@@ -43,7 +43,7 @@ export default function HomeCleaningForm() {
     };
 
     try {
-      const response = await axios.post('http://localhost:3001/home-cleaning', submitData, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/home-cleaning`, submitData, {
         headers: { 'Content-Type': 'application/json' },
       });
       console.log('Success:', response.data);

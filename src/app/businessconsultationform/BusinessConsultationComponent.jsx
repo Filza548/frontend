@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3001/business-consultations";
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/business-consultations`);
 
 const CONSULTATION_TYPES = [
   "Startup",

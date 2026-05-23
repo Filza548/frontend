@@ -15,7 +15,7 @@ export default function EmployeeTableComponent() {
 
   const fetchAppointments = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/employee');
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/employee`);
       console.log('Full API Response:', response);
       console.log('Response Data:', response.data);
       

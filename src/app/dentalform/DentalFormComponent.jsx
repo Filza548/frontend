@@ -83,7 +83,7 @@ export default function DentalFormComponent() {
     console.log("Submitting:", submitData);
     
     try {
-      const response = await axios.post('http://localhost:3001/consultations', submitData, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/consultations`, submitData, {
         headers: { 'Content-Type': 'application/json' }
       });
       console.log("Success:", response.data);

@@ -53,7 +53,7 @@ export default function WebDevProjectForm() {
     };
 
     try {
-      await axios.post('http://localhost:3001/web-dev-projects', submitData, {
+      await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/web-dev-projects`, submitData, {
         headers: { 'Content-Type': 'application/json' },
       });
       setSubmitted(true);

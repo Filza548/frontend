@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3001/legal-consultations";
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/legal-consultations`);
 
 const STATUS_COLORS = {
   pending:     { bg: "#2A1F00", text: "#FCD34D", dot: "#F59E0B", border: "#78350F" },

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/salon-spa-consultations';
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/salon-spa-consultations`);
 
 const inputClass =
   'w-full bg-rose-50 border border-rose-200 rounded-xl px-4 py-2.5 text-gray-700 placeholder-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition text-sm';

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3001/business-consultations";
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/business-consultations`);
 
 const STATUS_STYLES = {
   pending:      { bg: "#1C1400", text: "#FCD34D", dot: "#F59E0B", border: "#78350F" },

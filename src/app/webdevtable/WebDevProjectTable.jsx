@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/web-dev-projects';
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/web-dev-projects`);
 
 const statusConfig = {
   planning:    { bg: 'bg-slate-50 text-slate-600 border-slate-200',     dot: 'bg-slate-400' },

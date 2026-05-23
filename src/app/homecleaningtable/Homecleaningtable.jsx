@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/home-cleaning';
-
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/home-cleaning`) 
 const statusConfig = {
   pending:     { bg: 'bg-amber-50 text-amber-700 border-amber-200',   dot: 'bg-amber-400',   label: 'Pending' },
   confirmed:   { bg: 'bg-sky-50 text-sky-700 border-sky-200',         dot: 'bg-sky-500',     label: 'Confirmed' },

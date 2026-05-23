@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3001/legal-consultations";
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/legal-consultations`);
 
 const CASE_TYPES = ["Criminal", "Civil", "Family", "Corporate", "Property", "Labour", "Tax", "Other"];
 const STATUS_TYPES = ["pending", "in-progress", "completed", "cancelled"];

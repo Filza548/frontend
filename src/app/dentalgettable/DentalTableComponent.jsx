@@ -28,7 +28,7 @@ export default function DentalTableComponent() {
       if (filters.startDate) params.append('startDate', filters.startDate);
       if (filters.endDate) params.append('endDate', filters.endDate);
       
-      const url = `http://localhost:3001/consultations${params.toString() ? `?${params}` : ''}`;
+      const url = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/consultations${params.toString() ? `?${params}` : ''}`);
       const response = await axios.get(url);
       
       console.log('Full API Response:', response);

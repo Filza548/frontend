@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/personal-training';
+const API_URL = (`${process.env.NEXT_PUBLIC_BACKEND_URL}/personal-training`);
 
 const statusConfig = {
   scheduled:  { bg: 'bg-amber-500/10 text-amber-400 border-amber-500/30',   dot: 'bg-amber-500' },
