@@ -44,7 +44,7 @@ export default function DoctorBookingComponent() {
     
     try {
       // ✅ URL check karo - yeh sahi hai?
-      const response = await axios.post('http://localhost:3001/doctor-consultation', formData, {
+      const response = await axios.post(`${process.env.BACKEND_URL}/doctor-consultation`, formData, {
         headers: { 'Content-Type': 'application/json' }
       });
       
